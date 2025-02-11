@@ -1,2 +1,23 @@
+body { font-family: 'Courier New', Courier, monospace }
 .success { color: green }
 .fail { color: red }
+
+.solution {
+    border: black 1px double;
+    display: inline-block;
+    padding: 5px;
+}
+
+#html__word_disguised {
+    border: black 1px double;
+    display: inline-block;
+    padding: 5px;
+}
+input {
+    padding: 5px;
+    width: 1rem;
+}
+
+button {
+    display: block;
+}

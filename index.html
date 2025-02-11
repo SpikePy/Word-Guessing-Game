@@ -4,20 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guessing Game</title>
+    <title>Word Guessing Game</title>
     <script src="words_german.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
 </head>
 
 <body id="html__body">
     <h1>Word Guessing Game</h1>
     <p id="html__word_disguised"></p>
+    <p id="html__hint"></p>
     <p id="html__error_rate"></p>
+
+    <label for="name">Input Letter:</label>
+    <input id="html__input" type="text" oninput="get_input()" autofocus autocomplete="off">
+
+    <p id="html__history">Input History: </p>
+    <button onclick="location.reload()">Restart</button>
+
     <script src="script.js"></script>
-    <input id="html__input" type="text" oninput="get_input()" autofocus>
-    <p id="html__history"></p>
-    <p id="html__solve"></p>
-    <button onclick="location.reload()">Reload</button>
 </body>
 
 </html>
